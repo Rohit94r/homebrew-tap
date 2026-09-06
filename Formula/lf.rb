@@ -5,21 +5,21 @@
 class Lf < Formula
   desc "LayerFlow Terminal (lf) — local-first AI terminal workspace with streaming, tools, memory, and cloud sync."
   homepage "https://github.com/Rohit94r/layerflow-releases"
-  version "0.2.17"
+  version "0.2.18"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Rohit94r/layerflow-releases/releases/download/v0.2.17/lf_0.2.17_darwin_amd64.tar.gz"
-      sha256 "b93f9555518b9ed9a284f259be90eabe8a478275be9675370ddafb293c60ac10"
+      url "https://github.com/Rohit94r/layerflow-releases/releases/download/v0.2.18/lf_0.2.18_darwin_amd64.tar.gz"
+      sha256 "1ae675a160c816108a1f367bd061e08d4bd2f87b1f1f6401f94dfec54125d10e"
 
       define_method(:install) do
         bin.install "lf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Rohit94r/layerflow-releases/releases/download/v0.2.17/lf_0.2.17_darwin_arm64.tar.gz"
-      sha256 "d1770a102215ecd9b38588b51c2d8380dca77a4fad5f3eb3bbaf3afbe5a5b7d8"
+      url "https://github.com/Rohit94r/layerflow-releases/releases/download/v0.2.18/lf_0.2.18_darwin_arm64.tar.gz"
+      sha256 "ed5d6417ff05fe7cab55062f654c9a14f2d838353e5cee2de987a0bca62e472f"
 
       define_method(:install) do
         bin.install "lf"
@@ -29,15 +29,15 @@ class Lf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Rohit94r/layerflow-releases/releases/download/v0.2.17/lf_0.2.17_linux_amd64.tar.gz"
-      sha256 "863c27af5c585d13b92cf203c847385f64ea9bb908acb7669cba91ed3d5bd593"
+      url "https://github.com/Rohit94r/layerflow-releases/releases/download/v0.2.18/lf_0.2.18_linux_amd64.tar.gz"
+      sha256 "50e7850875a3f33c77a177c353aca7a9037dbafe91871c3de7470d55ca0f7acc"
       define_method(:install) do
         bin.install "lf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Rohit94r/layerflow-releases/releases/download/v0.2.17/lf_0.2.17_linux_arm64.tar.gz"
-      sha256 "de9e683042c29d722759b2ad1c202cb85941b64cde957bc411a68b7aa9e3236a"
+      url "https://github.com/Rohit94r/layerflow-releases/releases/download/v0.2.18/lf_0.2.18_linux_arm64.tar.gz"
+      sha256 "4d1be0a1600e4dc37076c395b9a393bbf5306d2006a512cdff4f078be657961e"
       define_method(:install) do
         bin.install "lf"
       end
